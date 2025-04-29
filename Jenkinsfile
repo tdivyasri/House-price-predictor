@@ -12,8 +12,13 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                // Pull the latest code from GitHub repository
-                git branch: 'main', url: 'https://github.com/tdivyasri/House-price-predictor.git'
+                script {
+                    // Disable SSL verification for Git
+                    bat 'git config --global http.sslVerify false'
+
+                    // Pull the latest code from GitHub repository
+                    git branch: 'main', url: 'https://github.com/tdivyasri/House-price-predictor.git'
+                }
             }
         }
 
