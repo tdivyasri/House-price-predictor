@@ -18,7 +18,7 @@ def home():
 def predict():
     if request.method == 'POST':
         try:
-            area = float(request.form.get('area'))
+            area = float(request.form.get('Area'))
             bedrooms = float(request.form.get('bedrooms'))
             bathrooms = float(request.form.get('bathrooms'))
             stories = float(request.form.get('stories'))
