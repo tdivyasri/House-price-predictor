@@ -61,14 +61,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            // Cleanup: Remove the Docker container if it exists
-            bat 'docker rm -f house-container || true'
-
-            // Remove the Docker image if needed
-            bat 'docker rmi -f %DOCKERHUB_USERNAME%/%IMAGE_NAME%:%IMAGE_TAG% || true'
-        }
-    }
 }
