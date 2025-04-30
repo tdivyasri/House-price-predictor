@@ -18,9 +18,9 @@ def home():
 def predict():
     if request.method == 'POST':
         try:
-            area = float(request.form.get('area'))
-            bedrooms = float(request.form.get('bedrooms'))
-            bathrooms = float(request.form.get('bathrooms'))
+            area = float(request.form.get('Area'))
+            bedrooms = float(request.form.get('Bedrooms'))
+            bathrooms = float(request.form.get('Bathrooms'))
             stories = float(request.form.get('stories'))
 
             # Fill remaining dummy features as 0
