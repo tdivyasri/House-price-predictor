@@ -21,7 +21,7 @@ def predict():
             area = float(request.form.get('Area'))
             bedrooms = float(request.form.get('Bedrooms'))
             bathrooms = float(request.form.get('Bathrooms'))
-            stories = float(request.form.get('stories'))
+            stories = float(request.form.get('Stories'))
 
             # Fill remaining dummy features as 0
             base_input = {'area': area, 'bedrooms': bedrooms, 'bathrooms': bathrooms, 'stories': stories}
