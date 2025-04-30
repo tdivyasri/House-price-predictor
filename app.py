@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+esfrom flask import Flask, request, render_template
 import pickle
 import numpy as np
 import pandas as pd
@@ -18,7 +18,7 @@ def home():
 def predict():
     if request.method == 'POST':
         try:
-            area = float(request.form.get('Area in m'))
+            area = float(request.form.get('Area in metres'))
             bedrooms = float(request.form.get('Bedrooms'))
             bathrooms = float(request.form.get('Bathrooms'))
             stories = float(request.form.get('Stories'))
