@@ -48,7 +48,7 @@ pipeline {
                     bat '''
                     docker pull %DOCKERHUB_USERNAME%/%IMAGE_NAME%:%IMAGE_TAG%
                     docker rm -f house-container || exit 0
-                    docker run -d -p 5000:5000 --name house-container %DOCKERHUB_USERNAME%/%IMAGE_NAME%:%IMAGE_TAG%
+                    docker run -d -p 5001:5000 --name house-container %DOCKERHUB_USERNAME%/%IMAGE_NAME%:%IMAGE_TAG%
                     '''
                 }
             }
