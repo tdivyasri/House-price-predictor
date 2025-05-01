@@ -1,3 +1,3 @@
 # House-price-predictor
 
-Good morning T Divyasri
+Good morning Divyasri
