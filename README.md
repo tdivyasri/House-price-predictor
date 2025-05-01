@@ -1,3 +1,3 @@
-# House-price-predictor
+# Houserent-price-predictor
 
 Good morning Divyasri
